@@ -9,6 +9,7 @@ var usersRouter = require('./routes/users');
 var holesRouter = require('./routes/holes');
 
 var app = express();
+app.listen(process.env.PORT || 3000);
 
 app.use(logger('dev'));
 app.use(express.json());
